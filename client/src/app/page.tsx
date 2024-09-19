@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button";
 import React from "react";
+import Dashboard from "./Dashboard/page";
 
 const Home = () => {
   return (
     <>
       <div>
-        <Button variant={"destructive"}>add</Button>
+        <Dashboard />
       </div>
     </>
   );
