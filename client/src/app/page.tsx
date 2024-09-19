@@ -1,7 +1,14 @@
+import { Button } from "@/components/ui/button";
 import React from "react";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <div>
+        <Button variant={"destructive"}>add</Button>
+      </div>
+    </>
+  );
 };
 
 export default Home;
