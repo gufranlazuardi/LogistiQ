@@ -5,14 +5,20 @@ import { Button } from "./ui/button";
 import { Bell, Menu, Search, Settings, Sun } from "lucide-react";
 import { Input } from "./ui/input";
 import Link from "next/link";
+import useSidebarToggle from "@/hooks/use-sidebar-toogle";
 
 const Navbar = () => {
+  const { toggleSidebar } = useSidebarToggle();
   return (
     <>
       <div className="flex justify-between items-center w-full mb-7">
         {/* left side */}
         <div className="flex justify-between items-center gap-5">
-          <Button className="" onClick={() => {}} variant={"outline"}>
+          <Button
+            className=""
+            onClick={toggleSidebar}
+            variant={"outline"}
+          >
             <Menu className="w-4 h-4" />
           </Button>
         </div>
